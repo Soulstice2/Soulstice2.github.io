@@ -4,11 +4,18 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	</head>
 	
+	<table id="dataTable">
+		
+	</table>
 	<script>
 		$( document ).ready(function() {
+			$('#dataTable').empty();
+			$('#dataTable').append('<thead>');
+			$('#dataTable').append('<th>IP</th>');
+			$('#dataTable').append('</thead>');
 			$.getJSON( "results.json", function( data ) {
 				  $.each( data.matches, function( key, val ) {
-				    console.log(val.ip_str);
+				    
 				  });
 			  });
 			alert("Hello World 12");
