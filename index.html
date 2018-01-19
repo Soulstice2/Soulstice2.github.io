@@ -16,7 +16,9 @@
 			$('#dataTable').append('<tbody>');
 			$.getJSON( "results.json", function( data ) {
 				  $.each( data.matches, function( key, val ) {
-				    $('#dataTable').append('<tr>'+ val.ip_str + '</tr>' + '<tr>' + val.port + '</tr>');
+				    $('#dataTable').append('<tr>');
+				    $('#dataTable').append('<td>'+ val.ip_str + '</td>' + '<td>' + val.port + '</td>');
+			            $('#dataTable').append('</tr>');
 				  });
 			  });
 			$('#dataTable').append('</tbody>');
