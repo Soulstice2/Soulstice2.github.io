@@ -14,11 +14,12 @@
 			$('#dataTable').append('<th>IP</th><th>Port</th>');
 			$('#dataTable').append('</thead>');
 			$.getJSON( "results.json", function( data ) {
-				  $.each( data.matches, function( key, val ) {
+				console.log(data.matches);
+			/*	  $.each( data.matches, function( key, val ) {
 				    
-				  });
+				  }); */
 			  });
-			alert("Hello World 12");
+			alert("Hello World 14");
 		});
 	</script>
 </html>
