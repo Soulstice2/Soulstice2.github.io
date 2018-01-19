@@ -11,7 +11,7 @@
 		$( document ).ready(function() {
 			$('#dataTable').empty();
 			$('#dataTable').append('<thead>');
-			$('#dataTable').append('<th>IP</th>');
+			$('#dataTable').append('<th>IP</th><th>Port</th>');
 			$('#dataTable').append('</thead>');
 			$.getJSON( "results.json", function( data ) {
 				  $.each( data.matches, function( key, val ) {
