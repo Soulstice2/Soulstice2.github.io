@@ -3,4 +3,12 @@
 		<link rel="stylesheet" type="text/css" href="Styles/table.css">
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	</head>
+	
+	<script>
+		$( document ).ready(function() {
+			$.getJSON( "results.json", function( data ) {
+				console.log(data);
+			  });
+		});
+	</script>
 </html>
