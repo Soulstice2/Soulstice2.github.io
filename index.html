@@ -7,9 +7,7 @@
 	<script>
 		$( document ).ready(function() {
 			$.getJSON( "results.json", function( data ) {
-				  $.each( data, function( key, val ) {
-				    console.log(val.total);
-				  });
+				console.log(data);
 			  });
 		});
 	</script>
