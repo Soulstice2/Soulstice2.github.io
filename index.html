@@ -17,13 +17,13 @@
 			$.getJSON( "results.json", function( data ) {
 				  $.each( data.matches, function( key, val ) {
 				    $('#dataTable').append('<tr>');
-				    $('#dataTable').append('<td>'+ val.ip_str + '</td>' + '<td>' + val.port + '</td>');
+				    $('#dataTable').append('<td>'+ val.ip_str + '</td>');
 			            $('#dataTable').append('</tr>');
 				  });
 			  });
 			$('#dataTable').append('</tbody>');
 			$('#dataTable').append('</table>');
-			alert("Hello World 14");
+			alert("Hello World 15");
 		});
 	</script>
 </html>
