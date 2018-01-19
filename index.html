@@ -7,7 +7,9 @@
 	<script>
 		$( document ).ready(function() {
 			$.getJSON( "results.json", function( data ) {
-				console.log(data.matches);
+				  $.each( data.matches, function( key, val ) {
+				    console.log(val);
+				  });
 			  });
 			alert("Hello World 12");
 		});
