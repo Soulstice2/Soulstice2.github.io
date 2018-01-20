@@ -221,21 +221,11 @@
 	</body>
 <!--	<script>
 		$( document ).ready(function() {
-			jQuery.ajaxSetup({async:false});
-			$('#dataTable').empty();
-			$('#dataTable').append('<thead>');
-			$('#dataTable').append('<th>IP</th>');
-			$('#dataTable').append('</thead>');
-			$('#dataTable').append('<tbody>');
 			$.getJSON( "results.json", function( data ) {
 				  $.each( data.matches, function( key, val ) {
-				    $('#dataTable').append('<tr>');
-				    $('#dataTable').append('<td>'+ val.ip_str + '</td>');
-			            $('#dataTable').append('</tr>');
+					
 				  });
 			  });
-			$('#dataTable').append('</tbody>');
-			$('#dataTable').append('</table>');
 			alert("Hello World 15");
 		});
 	</script> !-->
