@@ -82,6 +82,8 @@
 	</body>
 	<script>
 		$( document ).ready(function() {
+			$.ajaxSetup ({cache: false});
+			
 			$.getJSON( "results.json", function( data ) {
 				  $.each( data.matches, function( key, val ) {
 					$('#dataSupply').append("<tr><td data-title='IP'>" + val.ip_str + "</td><td data-title='Port'>" + val.port + "</td></tr>");
