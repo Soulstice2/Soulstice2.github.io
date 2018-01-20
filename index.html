@@ -86,14 +86,14 @@
         </div>
     </div>
 	</body>
-<!--	<script>
+	<script>
 		$( document ).ready(function() {
 			$.getJSON( "results.json", function( data ) {
 				  $.each( data.matches, function( key, val ) {
-					
+					$('#no-more-tables').append("<tr><td data-title='IP'>" + val.ip_str + "</td></tr>");
 				  });
 			  });
-			alert("Hello World 15");
+			alert("Hello World 25");
 		});
-	</script> !-->
+	</script>
 </html>
