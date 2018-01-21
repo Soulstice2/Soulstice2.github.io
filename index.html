@@ -86,7 +86,7 @@
 			
 			$.getJSON( "results.json", function( data ) {
 				  $.each( data.matches, function( key, val ) {
-					$('#dataSupply').append("<tr><td data-title='IP'>" + "<a href=" +val.ip_str + ">" + val.ip_str + "</a>" + "</td><td data-title='Port'>" + val.port + "</td></tr>");
+					$('#dataSupply').append("<tr><td data-title='IP'>" + "<a href=//" +val.ip_str + ">" + val.ip_str + "</a>" + "</td><td data-title='Port'>" + val.port + "</td></tr>");
 				  });
 			  });
 		});
