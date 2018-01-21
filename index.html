@@ -72,6 +72,7 @@
         			<tr>
         				<th>IP</th>
         				<th>Port</th>
+					<th>Tested(Session Only, Will clear on reboot)</th>
         			</tr>
         		</thead>
         		<tbody id="dataSupply">
@@ -86,7 +87,7 @@
 			
 			$.getJSON( "results.json", function( data ) {
 				  $.each( data.matches, function( key, val ) {
-					$('#dataSupply').append("<tr><td data-title='IP'>" + "<a href=//" +val.ip_str + ">" + val.ip_str + "</a>" + "</td><td data-title='Port'>" + val.port + "</td></tr>");
+					$('#dataSupply').append("<tr><td data-title='IP'>" + "<a href=//" +val.ip_str + ">" + val.ip_str + "</a>" + "</td><td data-title='Port'>" + val.port + "</td><td data-title='Tested'><input type='checkbox'></td></tr>");
 				  });
 			  });
 		});
